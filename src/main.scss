@@ -1,0 +1,81 @@
+@import "~css-wipe";
+
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.ly_cont {
+  max-width: 1230px;
+  padding: 60px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bl_dualListbox {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bl_listbox {
+  width: 200px;
+
+  .el_list {
+    margin-top: 12px;
+  }
+}
+
+.bl_actionList {
+  .el_icon {
+    margin-top: 20px;
+  }
+}
+
+.el_icon {
+  cursor: pointer;
+}
+
+.el_icon__green {
+  color: #3eaf7c;
+}
+
+.el_input {
+  width: 100%;
+  height: 2.5em;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: #b5b5b5;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #3273dc;
+    box-shadow: 0 0 0.125em rgba(50, 115, 220, 0.25);
+  }
+}
+
+.el_list {
+  height: 500px;
+  border: solid 1px #222;
+  overflow: scroll;
+
+  > li {
+    padding: 2px;
+    cursor: pointer;
+    border-bottom: solid 1px #222;
+
+    &:hover {
+      color: #fff;
+      background-color: #0063e1;
+    }
+  }
+}
