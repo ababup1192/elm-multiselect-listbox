@@ -84,7 +84,7 @@ update msg model =
         MoveRight usState ->
             ( { model
                 | leftListbox =
-                    deleteItemFromList usState model.leftListbox
+                    deleteItemFromList usState leftListbox
                 , rightListbox = rightListbox ++ [ usState ]
               }
             , Cmd.none
